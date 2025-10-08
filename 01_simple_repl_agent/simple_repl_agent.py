@@ -1,4 +1,5 @@
-# repl_tool_graph.py
+# simple_repl_agent.py
+
 # This script defines an AI agent using LangGraph and a local llama-cpp model.
 # The agent can use two tools: a summation tool and a Python REPL tool for executing simple code snippets.
 # The model is Hermes-2-Pro-Llama-3-8B-Q4_K_M.gguf -> https://huggingface.co/NousResearch/Hermes-2-Pro-Llama-3-8B-GGUF
@@ -291,3 +292,4 @@ if __name__ == "__main__":
    # Clean up resources, I added this to avoid some warnings on the terminal. 
     if hasattr(llm, 'close'):
         llm.close()
+
